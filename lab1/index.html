@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Лаба 1 частина II</title>
+
+        <script src="part1.js"></script>
+        <script>
+            function submitText() {
+                let input = document.getElementById("input")
+                let output = document.getElementById("outputText")
+                output.textContent = input.value
+            }
+        </script>
+    </head>
+    <body>
+        <input id="input"/>
+        <button id="submitButton" onclick="submitText()">Submit</button>
+        <div id="outputText"></div>
+    </body>
+</html>
