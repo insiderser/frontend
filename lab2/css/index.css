@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    border: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 30vw auto;
+}
+
+.title {
+    font-size: large;
+    font-weight: 600;
+}
+
+.normal {
+    font-size: medium;
+    font-weight: 400;
+}
+
+.lighter {
+    font-size: small;
+    font-weight: 300;
+}

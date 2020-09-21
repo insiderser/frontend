@@ -1,0 +1,31 @@
+#listContainer {
+    padding: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    list-style-type: none;
+}
+
+.noteItem {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.noteItem:hover, .noteItem.active {
+    background: lightgrey;
+}
+
+.itemTitleRow {
+    display: flex;
+}
+
+.itemTitle {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.deleteButton {
+    opacity: 0.4;
+}

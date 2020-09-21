@@ -1,0 +1,27 @@
+#notepadContainer {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contentInput {
+    flex-grow: 1;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+#titleRow {
+    display: flex;
+    flex-direction: row;
+}
+
+#titleInput {
+    flex-grow: 1;
+}
+
+#addButton {
+    cursor: pointer;
+}

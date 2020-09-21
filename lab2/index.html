@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Notepad</title>
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/list.css" rel="stylesheet">
+        <link href="css/notepad.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div id="gridContainer">
+            <ul id="listContainer">
+                <template id="listItemTemplate">
+                    <li class="noteItem">
+                        <div class="itemTitleRow">
+                            <span class='itemTitle normal'></span>
+                            <span class="material-icons deleteButton">close</span>
+                        </div>
+                        <span class='itemDate lighter'></span>
+                    </li>
+                </template>
+            </ul>
+            <div id="notepadContainer">
+                <div id="titleRow">
+                    <input autofocus="autofocus" class="title" id="titleInput" placeholder="Title">
+                    <span class="material-icons" id="addButton">add</span>
+                </div>
+                <textarea class="normal" id="contentInput" placeholder="Content"></textarea>
+            </div>
+        </div>
+
+        <script src="js/ListItem.js"></script>
+        <script src="js/ListController.js"></script>
+        <script src="js/StorageManager.js"></script>
+        <script src="js/NoteController.js"></script>
+        <script src="js/random.js"></script>
+        <script src="js/NavigationController.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
