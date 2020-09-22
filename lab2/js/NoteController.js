@@ -28,3 +28,4 @@ function saveNote() {
 
 titleInput.onchange = saveNote
 contentInput.onchange = saveNote
+onbeforeunload = saveNote
