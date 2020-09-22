@@ -38,7 +38,7 @@ function updateDisplayedItem() {
 }
 
 function setPageTitle(newTitle) {
-    document.title = newTitle + " | Notepad"
+    document.title = `${newTitle} | Notepad`
 }
 
-addEventListener("popstate", updateDisplayedItem)
+onpopstate = updateDisplayedItem

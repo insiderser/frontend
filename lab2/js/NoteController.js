@@ -16,7 +16,7 @@ function createNewNote() {
 
 function saveNote() {
     const selectedId = getSelectedItemId()
-    const id = selectedId === null ? generateId() : selectedId
+    const id = selectedId ? selectedId : generateId()
     const title = titleInput.value
     const content = contentInput.value
     const date = new Date()
