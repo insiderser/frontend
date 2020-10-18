@@ -2,3 +2,4 @@
 
 - [lab 1](https://insiderser.github.io/frontend/lab1/)
 - [lab 2](https://insiderser.github.io/frontend/lab2/)
+- [lab 3](https://insiderser.github.io/frontend/lab3/)

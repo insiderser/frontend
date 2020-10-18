@@ -1,0 +1,409 @@
+:root {
+    --color-primary: #505061;
+    --color-on-primary: white;
+
+    --color-hover: #9199cb;
+
+    --color-surface: white;
+    --color-on-surface: black;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    transition: all 0.25s ease;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.center-children {
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.surface {
+    background-color: var(--color-surface);
+}
+
+.on-surface {
+    color: var(--color-on-surface) !important;
+}
+
+.primary {
+    background-color: var(--color-primary);
+}
+
+.on-primary {
+    color: var(--color-on-primary) !important;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.button-with-padding {
+    padding: 8px;
+    margin: 0 5px;
+}
+
+.text-button {
+    text-align: center;
+}
+
+a.text-button {
+    color: inherit;
+    text-decoration: none;
+}
+
+.outlined-button {
+    border: solid 1px;
+}
+
+.outlined-button:hover {
+    border-color: var(--color-hover);
+}
+
+.solid-button:hover {
+    background-color: var(--color-hover);
+}
+
+.big-button {
+    padding: 1rem 1.5rem;
+}
+
+.rounded-small {
+    border-radius: 4px;
+}
+
+.rounded-medium {
+    border-radius: 10px;
+}
+
+.all-caps {
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.subtitle1 {
+    font-size: 2.5rem;
+}
+
+.subtitle2 {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle1 {
+        font-size: 2rem;
+    }
+
+    .subtitle2 {
+        font-size: 1.2rem;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.lighter {
+    font-weight: 400 !important;
+    color: #848690 !important;
+}
+
+@media (min-width: 600px) {
+    .for-desktop {
+        visibility: visible;
+    }
+
+    .for-mobile {
+        visibility: hidden;
+        display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .for-desktop {
+        visibility: hidden;
+        display: none !important;
+    }
+
+    .for-mobile {
+        visibility: visible;
+    }
+}
+
+.parallax {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+#header-row {
+    padding: 8px 25px;
+}
+
+#header-row.bigger-spacing {
+    padding: 35px 25px;
+}
+
+@media (min-width: 600px) {
+    #header-row {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 600px) {
+    #header-row {
+        justify-content: space-between;
+    }
+}
+
+#mobile-navigation-dropdown {
+    padding: 20px;
+}
+
+#mobile-navigation-dropdown .button {
+    margin: 5px;
+}
+
+#mobile-navigation-login-row {
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+    .logo-container {
+        width: 20px;
+        overflow: hidden;
+    }
+}
+
+#hero {
+    min-height: 80vh;
+    justify-content: space-evenly;
+    padding: 120px 25px 50px;
+}
+
+#hero-description {
+    justify-content: center;
+    text-align: center;
+}
+
+#hero-sign-up-button {
+    margin-top: 1rem;
+    color: #474f8f;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    #hero-sign-up-button {
+        font-size: 1.2rem;
+    }
+}
+
+.side-image {
+    max-width: 50%;
+}
+
+@media (min-width: 1200px) {
+    .side-image {
+        display: block;
+    }
+
+    #hero-description {
+        align-items: start;
+    }
+}
+
+@media (max-width: 1200px) {
+    .side-image {
+        display: none;
+    }
+
+    #hero-description {
+        align-items: center;
+    }
+}
+
+.main-banner {
+    background-image: url("https://protonmail.com/images/main-banner.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#features-section {
+    margin: 5%;
+}
+
+.features-item {
+    justify-items: start;
+    font-size: 1.2rem;
+    margin: 10%;
+}
+
+@media (min-width: 1200px) {
+    #features-section {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+    #features-section {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 1000px) {
+    #features-section {
+        column-count: 1;
+    }
+
+    .features-item {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1000px) {
+    .features-item {
+        align-items: start;
+    }
+}
+
+.physical-security-background {
+    background-image: url("https://protonmail.com/images/security-bg.jpg");
+}
+
+#physical-security-foreground {
+    margin: 20% 10%;
+    max-width: 485px;
+    align-items: start;
+    padding: 1rem 3rem 3rem;
+    z-index: 5;
+}
+
+@media (max-width: 600px) {
+    #physical-security-foreground {
+        padding: 0.5rem 2rem 2rem;
+    }
+}
+
+#physical-security-learn-more-btn {
+    margin-top: 1rem;
+}
+
+#physical-security-learn-more-btn:hover {
+    background-color: var(--color-hover);
+}
+
+#footer {
+    padding: 75px 20px;
+}
+
+@media (min-width: 1200px) {
+    #footer {
+        column-count: 5;
+    }
+}
+
+@media (max-width: 1200px) {
+    #footer {
+        column-count: 1;
+    }
+}
+
+#footer-links li {
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+#footer-links a:hover {
+    text-decoration: underline;
+    color: white !important;
+}
+
+.with-bottom-divider {
+    padding-bottom: 5px;
+    border-bottom: solid 1px #5a5b6a;
+}
+
+#to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    justify-content: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    #to-top-btn {
+        visibility: hidden !important;
+        display: none;
+    }
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.gone {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
