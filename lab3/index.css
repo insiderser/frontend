@@ -112,7 +112,7 @@ a.text-button {
     font-size: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .title {
         font-size: 2.5rem;
     }
@@ -143,7 +143,7 @@ a.text-button {
     color: #848690 !important;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 801px) {
     .for-desktop {
         visibility: visible;
     }
@@ -154,7 +154,7 @@ a.text-button {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .for-desktop {
         visibility: hidden;
         display: none !important;
@@ -194,13 +194,13 @@ ul {
     padding: 35px 25px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 801px) {
     #header-row {
         justify-content: space-evenly;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     #header-row {
         justify-content: space-between;
     }
@@ -218,7 +218,7 @@ ul {
     justify-content: space-evenly;
 }
 
-@media (max-width: 1000px) and (min-width: 600px) {
+@media (max-width: 1000px) and (min-width: 801px) {
     .logo-container {
         width: 20px;
         overflow: hidden;
@@ -242,7 +242,7 @@ ul {
     font-size: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     #hero-sign-up-button {
         font-size: 1.2rem;
     }
@@ -252,7 +252,7 @@ ul {
     max-width: 50%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     .side-image {
         display: block;
     }
@@ -289,13 +289,13 @@ ul {
     margin: 10%;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     #features-section {
         column-count: 3;
     }
 }
 
-@media (max-width: 1200px) and (min-width: 1000px) {
+@media (max-width: 1200px) and (min-width: 1001px) {
     #features-section {
         column-count: 2;
     }
@@ -312,7 +312,7 @@ ul {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1001px) {
     .features-item {
         align-items: start;
     }
@@ -330,7 +330,7 @@ ul {
     z-index: 5;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     #physical-security-foreground {
         padding: 0.5rem 2rem 2rem;
     }
@@ -348,7 +348,7 @@ ul {
     padding: 75px 20px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     #footer {
         column-count: 5;
     }
@@ -385,7 +385,7 @@ ul {
     font-size: 18px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     #to-top-btn {
         visibility: hidden !important;
         display: none;
