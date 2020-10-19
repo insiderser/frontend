@@ -34,13 +34,13 @@ function scrollToTop() {
     function closeMobileNavigation() {
         hamburgerBtn.textContent = 'menu'
         mobileNavigationDropdown.classList.remove('visible')
-        mobileNavigationDropdown.classList.add('gone')
+        mobileNavigationDropdown.classList.add('hidden')
     }
 
     function openMobileNavigation() {
         hamburgerBtn.textContent = 'close'
         mobileNavigationDropdown.classList.add('visible')
-        mobileNavigationDropdown.classList.remove('gone')
+        mobileNavigationDropdown.classList.remove('hidden')
     }
 
     hamburgerBtn.onclick = () => {

@@ -401,9 +401,3 @@ ul {
     visibility: hidden;
     opacity: 0;
 }
-
-.gone {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-}
