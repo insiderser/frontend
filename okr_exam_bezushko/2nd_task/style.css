@@ -1,0 +1,25 @@
+.red {
+    background: red;
+    height: 50%;
+    width: 50%;
+}
+
+.green {
+    background: green;
+    height: 50%;
+    width: 50%;
+}
+
+.blue {
+    background: blue;
+    width: 50%;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+}

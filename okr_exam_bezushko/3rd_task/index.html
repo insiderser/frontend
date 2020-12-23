@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <p>Choose city to see current weather:</p>
+            <template id="weather-details-template">
+                <img class="weather-condition-icon"/>
+                <div class="temperature-container">
+                    Temperature: <span class="temperature">13</span>°C Feels like: <span
+                        class="temperature-feels">8.55</span>°C
+                </div>
+                <div class="pressure-humidity-container">
+                    Pressure: <span class="pressure">766</span> mmHg Humidity: <span class="humidity">93</span> %
+                </div>
+            </template>
+            <ul>
+                <li>
+                    <div class="city-name">Berlin</div>
+                </li>
+                <li>
+                    <div class="city-name">Kyiv</div>
+                </li>
+                <li>
+                    <div class="city-name">Amsterdam</div>
+                </li>
+                <li>
+                    <div class="city-name">Lisbon</div>
+                </li>
+                <li>
+                    <div class="city-name">New York</div>
+                </li>
+                <li>
+                    <div class="city-name">Tbilisi</div>
+                </li>
+            </ul>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
